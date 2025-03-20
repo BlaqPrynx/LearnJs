@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans & Ifs</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <script>
+
+        //when creating looleans dont put them in quotes as javascript may readit as a string instead of boolean""
+        true
+        false
+
+         console.log(12<23);
+         console.log(12>13);
+
+         console.log(typeof '12>4') ; //this is a string
+         console.log(typeof 12>4) ;  //this is a boolean
+
+         /*Operators. < > >= <= === == !== 
+          == tries to convert both types into the same type.  where as === mantains the type and compares
+        */
+        console.log(10 == '10.00'); // this will return true because == converts into strings and compares them
+        console.log (10 ==='10.00');  //this will return false because === mantains the type and compares.
+
+        //comparison operators has a lower priority to Math
+
+        console.log(3 > 5-4); // This will return true because Math (5-4) will be calculated first and compared.
+
+
+        /*If Statements   
+         Declared If (true)
+         { do this ;}
+          else 
+          {do that ;}   */
+
+          if (13 >= 16){
+            console.log("You can drive")
+          } 
+          else{
+            console.log("Nope You can only drive when are 16yrs or older ")
+          }
+
+         const age =13;
+
+          if (age >= 16){
+            console.log("You can drive");
+          } 
+          else if(age >= 14){
+            console.log("almost there , just a matter of time");
+          }
+          else{
+            console.log("Nope You can only drive when are 16yrs or older ");
+          }
+
+          /* operators  && || !
+          */
+
+          console.log(true && true);   //AND operator
+          console.log(true || false);    //OR operator
+          console.log(!true);           // NOT operator
+    </script>
+    
+</body>
+</html>
