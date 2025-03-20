@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans and conditions</title>
+</head>
+<body>
+    <!-- Continue from 6D , lets say the discount is only available if it is not a holiday. create a variable :
+     const isHoliday=true;
+     1.update the code so that in order to get a discount , people must meet the age requieremnt and it also not a 
+     holiday.
+     && has Higher priority than || so control which runs first with a () , Change isHoliday vaue to display different messages. -->
+
+
+
+
+    <script>
+        const hour =23;
+
+        const age=83;
+        const isHoliday=false;
+
+        if ((age <=6  || age >=65) && !isHoliday){
+            console.log("Discount");
+        }
+        else {
+            console.log('No Discount');
+        }
+
+    </script>
+</body>
+</html>
