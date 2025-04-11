@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans & Ifs</title>
+</head>
+<body>
+      <!--Lets say were trying to guess the result..Create a variable called guess and save your guess ('Head or tails
+      1.if your guess matches the result, display 'You win in the console'
+      2.if your guess does not match tthe result display you lose) '  -->
+
+    <script>
+
+        const randomNumber=Math.random();
+        let result ="";
+       
+        
+           if (randomNumber < 0.5){
+            result = 'Heads'
+          
+           }
+           else {
+            result = 'Tails';
+             }
+
+        let guess="";
+            if(guess === result){
+                console.log("You Win !");
+
+            }
+            else {
+                console.log("You lose");
+            }
+           
+
+        
+
+
+    </script>
+    
+</body>
+</html>
